@@ -25,7 +25,7 @@ export default function Home() {
             블록체인 카운터 앱
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-            MetaMask와 스마트 컨트랙트를 활용한 카운터 애플리케이션
+            MetaMask&스마트 컨트랙트를 활용한 카운터 애플리케이션
           </p>
         </div>
 
