@@ -1,0 +1,41 @@
+/* Tailwind v4 기본 임포트 */
+@import 'tailwindcss';
+
+/* 전역 컬러 토큰(라이트 기본) */
+:root {
+  color-scheme: light; /* 👈 라이트 기본 */
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* .dark 클래스가 붙으면 다크 모드 */
+.dark {
+  color-scheme: dark; /* 👈 다크로 강제 전환 (미디어 대신 클래스 전략) */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* Tailwind v4 인라인 테마 토큰 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* 문서 기본 배경/글자색: 토큰 사용 */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* 다크/라이트 전환 부드럽게 (CounterApp에서도 .theme-transition 쓰지만,
+   전역에서도 안전망으로 한 번 더) */
+html.theme-transition *,
+html.theme-transition {
+  transition: background-color 200ms, color 200ms, border-color 200ms,
+    fill 200ms, stroke 200ms;
+}
