@@ -24,8 +24,9 @@ export default function Home() {
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
             블록체인 카운터 앱
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-            MetaMask&스마트 컨트랙트를 활용한 카운터 애플리케이션
+          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md mx-auto break-keep leading-relaxed">
+            <span>MetaMask&스마트 컨트랙트를 활용한</span>
+            <span className="block">카운터 애플리케이션</span>
           </p>
         </div>
 
