@@ -28,6 +28,9 @@ export default function Home() {
             <span>MetaMask&스마트 컨트랙트를 활용한</span>
             <span className="block">카운터 애플리케이션</span>
           </p>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+            92313726 홍정현 
+          </p>
         </div>
 
         {/* Main App */}
